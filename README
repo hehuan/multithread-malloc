@@ -1,0 +1,6 @@
+* compile
+  gcc -Wall multithread-malloc.c -o multithread-malloc -lpthread
+
+* run
+  ./multithread-malloc --thread=4 --size=10 --count=10 --loop=10
+
