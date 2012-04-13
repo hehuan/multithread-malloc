@@ -130,13 +130,11 @@ void *membench(void *arg) {
   int *mem[count];
   int size[count];
 
-  int i, loopcnt;
+  int i, loopcnt = 0;
 
   while (1) {
 
-    loopcnt++;
-
-    if ( loop != 0 && loopcnt > loop) {
+    if ( loop != 0 && ++loopcnt > loop) {
       break;
     }
 
