@@ -77,10 +77,10 @@ int main(int argc, char **argv){
   pthread_t p[threadNum];
   struct timeval t0, t1;
 
-  printf("Thread Number                   : %d\n", threadNum);
-  printf("Malloc Size                     : %d MB\n", thread_args.mallocSize);
-  printf("Malloc Concurrent Number/thread : %d\n", thread_args.count);
-  printf("Loop count/Thread               : %d\n", thread_args.loop);
+  printf("Number of threads                      : %d\n", threadNum);
+  printf("Malloc size                            : %d MB\n", thread_args.mallocSize);
+  printf("Number of councurrent malloc per thread: %d\n", thread_args.count);
+  printf("Number of loops per thread             : %d\n", thread_args.loop);
 
   // Get Starttime
   gettimeofday(&t0, NULL);

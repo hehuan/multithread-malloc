@@ -1,6 +1,0 @@
-* build
-  gcc -Wall multithread-malloc-benchmark.c -o multithread-malloc-benchmark -lpthread
-
-* execute
-  ./multithread-malloc-benchmark --thread=4 --size=10 --count=10 --loop=10
-

@@ -8,7 +8,7 @@ jemalloc: multithread-jemalloc-benchmark
 all: malloc jemalloc
 
 multithread-malloc-benchmark: multithread-malloc-benchmark.c
-	$(CC) $(CFLAGS) $< -o $@ -lpthread 
+	$(CC) $(CFLAGS) $< -o $@ -lpthread
 
 multithread-jemalloc-benchmark: multithread-malloc-benchmark.c
 	$(CC) $(CFLAGS) $< -o $@ -lpthread $(INCDIR_JEMALLOC) -ljemalloc
